@@ -1,0 +1,8 @@
+.sample{
+    background-color: rgb(226, 235, 109);
+    padding: 20px;
+    border-radius: 50px;
+}
+.strike{
+    text-decoration: line-through;
+}

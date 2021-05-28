@@ -1,0 +1,7 @@
+
+<h2 class="container my-5 sample">Todo List App - Harsh Sharma</h2>
+
+<app-add-todo-item (todoAdd)="addTodo($event)"></app-add-todo-item>
+<div *ngFor = "let todo of todos; index as i">
+    <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoCheck)="toggleTodo($event)"></app-todo-item>
+</div>

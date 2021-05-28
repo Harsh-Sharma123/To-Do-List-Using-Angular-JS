@@ -1,0 +1,17 @@
+
+<div class="container my-5 sample">
+
+<form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Todo Title</label>
+            <input type="text" class="form-control" name="titie" [(ngModel)]="title" id="title" aria-describedby="emailHelp">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Todo Description</label>
+        <input type="text" class="form-control" id="desc" name = "desc" [(ngModel)]="desc">
+    </div>
+    
+    <button type="submit" class="btn btn-sm btn-primary">Add Todo</button>
+</form>
+</div>

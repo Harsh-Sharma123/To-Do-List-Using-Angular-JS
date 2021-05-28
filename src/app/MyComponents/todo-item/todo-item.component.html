@@ -1,0 +1,10 @@
+<div class="container my-3 sample">
+
+    <h4 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h4>
+    <h5 [ngClass]="{'strike': !todo.active}">{{todo.desc}}</h5>
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckbox(todo)" [checked]="!todo.active">
+        <label class="form-check-label" for="exampleCheck1{{i}}">Done</label>
+      </div>
+    <button class="btn btn-danger btn-sm" (click)="onClick(todo)">Delete</button>
+</div>
